@@ -1,0 +1,53 @@
+#include<iostream>
+using namespace std;
+
+string zodiac_sign(string,int);
+main()
+{
+ string month,zs;
+ int date;
+ cout<<"Enter month: ";
+ cin>>month;
+ cout<<"Enter date: ";
+ cin>>date;
+ zs = zodiac_sign(month,date);
+ cout<<"Zodiac Sign: "<<zs<<endl;
+}
+string zodiac_sign(string month,int date)
+{
+ if(month == "March" && date > 20 && date <32)
+ return "Aries"; 
+ else if(month == "April" && date > 0 && date < 20)
+ return "Aries";
+ else if(month == "April" && date > 19 && date <31)
+ return "Taurus";
+ else if(month == "May" && date > 0 && date <21)
+ return "Taurus";
+ else if(month == "May" && date > 20 && date <32)
+ return "Gemini";
+ else if(month == "June" && date > 0 && date <21)
+ return "Gemini";
+ else if(month == "June" && date > 20 && date <31)
+ return "Cancer";
+ else if(month == "July" && date > 0 && date <23)
+ return "Cancer";
+ else if(month == "July" && date > 22 && date <32)
+ return "Leo";
+ else if(month == "August" && date > 0 && date < 23)
+ return "Leo";
+ else if(month == "August" && date > 22 && date <32)
+ return "Virgo";
+ else if(month == "September" && date > 0 && date <23)
+ return "Virgo";
+ else if(month == "" && date > 19 && date <31)
+ return "Taurus";
+
+
+
+
+
+
+
+
+}
+
